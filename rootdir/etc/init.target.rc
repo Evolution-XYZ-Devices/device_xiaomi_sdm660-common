@@ -137,6 +137,18 @@ on boot
     chown system system /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/input_suspend
 
+service folio_daemon /system/bin/folio_daemon
+    class late_start
+    user system
+    group system uhid
+    disabled
+
+on property:init.svc.zygote=running
+    start folio_daemon
+
+on property:init.svc.zygote=stopped
+    stop folio_daemon
+
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
     class core
