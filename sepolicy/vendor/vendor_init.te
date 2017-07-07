@@ -16,3 +16,5 @@ allow vendor_init {
 
 allow vendor_init blkio:file w_file_perms;
 set_prop(vendor_init, vendor_qcom_ims_prop)
+
+allow vendor_init proc:file w_file_perms;
