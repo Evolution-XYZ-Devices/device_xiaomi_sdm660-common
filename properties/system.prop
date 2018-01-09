@@ -41,6 +41,7 @@ ro.qualcomm.cabl=0
 video.disable.ubwc=1
 vendor.display.disable_rotator_downscale=1
 debug.hwui.use_buffer_age=false
+debug.sf.recomputecrop=0
 
 # Surfaceflinger
 debug.sf.hw=1
