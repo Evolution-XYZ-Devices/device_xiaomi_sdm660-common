@@ -233,6 +233,8 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/swappiness 100
     swapon_all /vendor/etc/fstab.zram
     write /proc/sys/vm/dirty_ratio 20
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
 
 on property:init.svc.surfaceflinger=stopped
     stop ppd
