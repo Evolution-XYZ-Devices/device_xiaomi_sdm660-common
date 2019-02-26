@@ -3,6 +3,9 @@ type mlipay_prop, property_type;
 
 vendor_restricted_prop(vendor_camera_prop);
 
+# Camera
+type persist_camera_prop, property_type;
+
 # Dirac
 type dirac_prop, property_type;
 
