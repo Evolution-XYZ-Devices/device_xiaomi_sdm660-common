@@ -33,6 +33,10 @@
 #define TAP_TO_WAKE_NODE "/sys/touchpanel/double_tap"
 #endif
 
+#ifndef TAP_TO_WAKE_NODE2
+#define TAP_TO_WAKE_NODE2 "/proc/touchscreen/enable_dt2w"
+#endif
+
 namespace aidl {
 namespace google {
 namespace hardware {
@@ -76,6 +80,7 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
         case Mode::DOUBLE_TAP_TO_WAKE:
             {
             ::android::base::WriteStringToFile(enabled ? "1" : "0", TAP_TO_WAKE_NODE, true);
+            ::android::base::WriteStringToFile(enabled ? "1" : "0", TAP_TO_WAKE_NODE2, true);
             [[fallthrough]];
             }
         case Mode::LOW_POWER:
