@@ -37,6 +37,10 @@
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3                                                                                             u:object_r:public_adsprpcd_file:s0
 
+# HW Info
+/sys/devices/platform/HardwareInfo(/.*)? u:object_r:sysfs_info:s0
+/sys/devices/platform/HardwareInfo/gsensor  u:object_r:sysfs_info:s0
+
 # IR
 /dev/lirc0                                                                                                                  u:object_r:spidev_device:s0
 /dev/spidev7.1                                                                                                              u:object_r:spidev_device:s0

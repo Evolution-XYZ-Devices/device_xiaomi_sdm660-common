@@ -224,6 +224,19 @@ on boot
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
 
+    # zhitongze@huaqin.com add sensor hardware info 20180207 begin
+    chmod 0664 /sys/devices/platform/HardwareInfo/gsensor
+    chmod 0664 /sys/devices/platform/HardwareInfo/msensor
+    chmod 0664 /sys/devices/platform/HardwareInfo/alsps
+    chmod 0664 /sys/devices/platform/HardwareInfo/gyro
+    # zhitongze@huaqin.com add sensor hardware info 20180207 end
+    chown system system /sys/devices/platform/HardwareInfo/alsps
+    chown system system /sys/devices/platform/HardwareInfo/gsensor
+    chown system system /sys/devices/platform/HardwareInfo/msensor
+    chown system system /sys/devices/platform/HardwareInfo/gyro
+    chown system system /sys/devices/platform/HardwareInfo/sar_sensor_1
+    chown system system /sys/devices/platform/HardwareInfo/sar_sensor_2
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
