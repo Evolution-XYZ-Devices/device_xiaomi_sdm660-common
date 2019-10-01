@@ -362,6 +362,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+# Preopt critical applications
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SettingsGoogle \
+    SystemUIGoogle
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
