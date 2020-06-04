@@ -1,6 +1,10 @@
 #Build FP to be picked by both system and vendor
 BUILD_FINGERPRINT := "xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys"
 
+# Apex
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.apex.updatable=true
+
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=8 \
