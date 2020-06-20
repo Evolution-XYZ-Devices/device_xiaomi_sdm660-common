@@ -8,6 +8,9 @@ type sysfs_system_sleep_stats, sysfs_type, fs_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
 type thermal_data_file, file_type, data_file_type;
 
+# blkio
+type blkio, file_type;
+
 # Kcal
 type kcal_dev, sysfs_type, fs_type;
 
