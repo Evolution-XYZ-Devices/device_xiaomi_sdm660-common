@@ -1130,6 +1130,12 @@
         <item>0:2:15</item>
     </string-array>
     
+    <!-- Controls the navigation bar interaction mode:
+         0: 3 button mode (back, home, overview buttons)
+         1: 2 button mode (back, home buttons + swipe up for overview)
+         2: gestures only for back, home and overview -->
+    <integer name="config_navBarInteractionMode">2</integer>
+    
     <!-- Specify if the fingerprint hardware support gestures-->
     <bool name="config_fingerprintSupportsGestures">true</bool>
     
