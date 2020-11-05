@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018-2020 The Xiaomi-SDM660 Project
+     https://github.com/xiaomi-sdm660
+     
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+   <string name="advanced_settings">Nastavení zařízení</string>
+    <string name="advanced_settings_summary">Rozšírená nastavení</string>
+
+    <string name="display_title">Displej</string>
+
+    <!-- Mi Note 3 Settings -->
+    <string name="jason_pref_title">Nastavení zařízení</string>
+    <string name="jason_pref_summary">Rozšířené nastavení Mi Note 3</string>
+
+    <!-- KCal -->
+    <string name="device_kcal_title">Kalibrace barev</string>
+
+    <!-- Notification LED brightness -->
+    <string name="notification_title">Notifikační LED dioda</string>
+    <string name="notification_led_title">Jas</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display">Ambientní displej</string>
+    <string name="advanced_doze_summary">Rozšírená nastavení ambientního displeje</string>
+
+    <string name="vibration_title">Zpětná hmatová odezva</string>
+    <string name="vibration_strength_title">Síla</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_profile_title">Výkon</string>
+    <string name="thermal_title">Nastavení Výkonu</string>
+    <string name="thermal_summary">Režim výkonu</string>
+    <string name="thermal_dialogTitle">Režim výkonu</string>
+
+    <!-- Values for Thermal Presets -->
+    <string name="thermal_performance">Výkon</string>
+    <string name="thermal_battery">Šetřič batérie</string>
+    <string name="thermal_gaming">Herní</string>
+    <string name="thermal_balance">Vyvážený</string>
+    <string name="thermal_extreme_battery">Extrémní šetrič baterie</string>
+
+    <!-- kcal -->
+    <string name="advanced_settings_kcal">Kalibrace barev</string>
+    <string name="cat_colormanagement">Nastavení barev</string>
+    <string name="cat_calibration">Kalibrace displeje</string>
+
+    <string name="kcal_enabled">Zapnuto</string>
+    <string name="kcal_disabled">Vypnuto</string>
+    <string name="set_on_boot">Aktivovat po zapnutí zařízení</string>
+    <string name="color_red">Červená</string>
+    <string name="color_green">Zelená</string>
+    <string name="color_blue">Modrá</string>
+    <string name="color_minimum">Minimum</string>
+    <string name="saturation">Saturace</string>
+    <string name="value">Hodnota</string>
+    <string name="contrast">Kontrast</string>
+    <string name="hue">Odstín</string>
+    <string name="grayscale">Černobílé zobrazení</string>
+
+    <string name="presets_dialog_title">Výběr předvolby</string>
+    <!-- Presets -->
+    <string name="preset_default">Základní</string>
+    <string name="preset_version_1">Verze 1</string>
+    <string name="preset_version_2">Verze 2</string>
+    <string name="preset_version_3">Verze 3</string>
+    <string name="preset_triluminous">Triluminous</string>
+    <string name="preset_deep_black_white">Sytá černá a bílá</string>
+    <string name="preset_deep_natural">Sýta základní</string>
+    <string name="preset_cool_amoled">Studená - Amoled</string>
+    <string name="preset_extreme_amoled">Extrémní - Amoled</string>
+    <string name="preset_warm_amoled">Teplá - Amoled</string>
+    <string name="preset_hybrid_mamba">Hybrid Mamba</string>
+
+    <string name="hall_wakeup_title">Probuzení překlopením krytu</string>
+    <string name="hall_title">Povolit probuzení překlopením krytu</string>
+    <string name="hall_wakeup_summary">Probuzení zařízení magnetickým krytem</string>
+    <!-- menu -->
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Resetovat</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">Zvolit novou hodnotu</string>
+    <string name="default_value">Základní hodnota</string>
+    <string name="edit_hint" formatted="false">Hodnota mezi %1$d a %2$d</string>
+
+    <!-- FPS Info -->
+    <string name="fps_info_title">Ukazatel FPS</string>
+    <string name="fps_info_summary">Zobrazovat aktuální počet snímků za sekundu</string>
+    
+    <!-- Audio amplification -->
+    <string name="audio_amplify">Zesílení zvuku</string>
+    <string name="headphone_gain">Zesílení sluchátek</string>
+    <string name="mic_gain">Zesílení mikrofonu</string>
+    
+    <!-- Selinux Switch -->
+    <string name="selinux_explanation_summary">SELinux jsou úpravy jádra (kernelu) a uživatelských nástrojů. Změna nastavení může způsobit nechtěné účinky. Použijte na vlastní riziko (Nastavení nebudou přístupná pokud zařízení není rootované).</string>
+    <string name="selinux_category">SELinux</string>
+    <string name="selinux_mode_title">SELinux Mód</string>
+    <string name="selinux_permissive_summary">Uvolněný</string>
+    <string name="selinux_enforcing_summary">Vynucený</string>
+    <string name="selinux_persistence_title">Zanechat po restartovaní</string>
+    <string name="selinux_persistence_summary">Obnovit zvolenou hodnotu po každém startu</string>
+    <string name="selinux_permissive_toast_title">Selinux je nastavený na uvolněný!</string>
+    <string name="selinux_enforcing_toast_title">Selinux je nastavený na vynucený!</string>
+    <string name="cannot_get_su">Nemáte root přístup</string>
+</resources>
