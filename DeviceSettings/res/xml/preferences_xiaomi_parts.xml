@@ -39,7 +39,7 @@
             app:units="%"
             android:defaultValue="100" />
     </PreferenceCategory>
-    
+
     <PreferenceCategory
        android:key="audio_amplify"
        android:title="@string/audio_amplify">
@@ -86,12 +86,13 @@
                 android:targetClass="org.lineageos.settings.kcal.KCalSettingsActivity"
                 android:targetPackage="org.lineageos.settings.kcal" />
         </Preference>
-        <SwitchPreference
+        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
             android:key="fps_info"
             android:icon="@drawable/ic_fps_info"
             android:title="@string/fps_info_title"
             android:summary="@string/fps_info_summary"
-            android:persistent="true" />
+            android:persistent="true"
+            android:defaultValue="false" />
 
         <Preference
             android:key="device_jason"
