@@ -39,6 +39,7 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
     androidboot.usbcontroller=a800000.dwc3 \
     ehci-hcd.park=3 \
+    kpti=off \
     loop.max_part=7 \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x37 \
