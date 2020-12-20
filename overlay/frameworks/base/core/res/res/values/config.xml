@@ -1154,4 +1154,7 @@
          screenshot chord -->
    <integer name="config_screenshotChordKeyTimeout">0</integer>
 
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_supportsInDisplayFingerprint">false</bool>
+    
 </resources>
