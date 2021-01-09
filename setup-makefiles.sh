@@ -31,11 +31,9 @@ if [[ -z "$DEVICE_DIR" ]]; then
     DEVICE_DIR="${COMMON_DIR}/../${DEVICE}"
 fi
 
-ROOT="$COMMON_DIR"/../../..
-
-HELPER="$ROOT"/vendor/evolution/build/tools/extract_utils.sh
-if [ ! -f "$HELPER" ]; then
-    echo "Unable to find helper script at $HELPER"
+HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
+if [ ! -f "${HELPER}" ]; then
+    echo "Unable to find helper script at ${HELPER}"
     exit 1
 fi
 . "$HELPER"
