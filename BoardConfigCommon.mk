@@ -50,7 +50,6 @@ BOARD_KERNEL_CMDLINE := \
     msm_rtb.filter=0x37 \
     printk.devkmsg=on \
     sched_enable_hmp=1 \
-    sched_enable_power_aware=1 \
     service_locator.enable=1 \
     usbcore.autosuspend=7 \
     user_debug=31 \
