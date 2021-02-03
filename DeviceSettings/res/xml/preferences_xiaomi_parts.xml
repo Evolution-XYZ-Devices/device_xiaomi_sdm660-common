@@ -123,15 +123,4 @@
             android:icon="@drawable/ic_thermal" />
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:key="hall_wakeup"
-        android:title="@string/hall_wakeup_title">
-
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
-            android:defaultValue="true"
-            android:key="hall"
-            android:summary="@string/hall_wakeup_summary"
-            android:title="@string/hall_title"
-            android:icon="@drawable/ic_flip" />
-    </PreferenceCategory>
 </PreferenceScreen>
