@@ -1,1 +1,4 @@
-/system/bin/folio_daemon        u:object_r:folio_daemon_exec:s0
+/system/bin/folio_daemon                      u:object_r:folio_daemon_exec:s0
+# Apex Metadata
+/data/vendor/metadata_apex(/.*)?              u:object_r:apex_metadata_file:s0
+/data/vendor/metadata_apex/sessions(/.*)?     u:object_r:apex_metadata_file:s0
