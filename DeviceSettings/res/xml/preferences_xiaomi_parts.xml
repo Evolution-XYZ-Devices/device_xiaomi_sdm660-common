@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (C) 2018 The Xiaomi-SDM660 Project
 
@@ -160,4 +159,19 @@
             android:title="@string/hall_title"
             android:icon="@drawable/ic_flip" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="speaker"
+        android:title="@string/speaker_category">
+
+        <Preference
+            android:key="clear_speaker_settings"
+            android:title="@string/clear_speaker_title"
+            android:icon="@drawable/ic_speaker_cleaner_icon" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.xiaomi.parts.speaker.ClearSpeakerActivity"
+                android:targetPackage="com.xiaomi.parts.speaker" />
+        </Preference>
+      </PreferenceCategory>
 </PreferenceScreen>
