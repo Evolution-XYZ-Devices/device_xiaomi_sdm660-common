@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (C) 2018 The Xiaomi-SDM660 Project
 
@@ -42,8 +41,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-       android:key="audio_amplify"
-       android:title="@string/audio_amplify">
+       android:key="audio"
+       android:title="@string/audio_title">
 
         <org.lineageos.settings.device.preferences.CustomSeekBarPreference
             android:defaultValue="0"
@@ -60,6 +59,18 @@
             app:min="-10"
             android:icon="@drawable/ic_mic"
             android:title="@string/mic_gain"/>
+
+        <Preference
+            android:key="dirac"
+            android:persistent="false"
+            android:summary="@string/dirac_pref_summary"
+            android:title="@string/dirac_pref_title"
+            android:icon="@drawable/ic_dirac">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.xiaomi.dirac.DiracActivity"
+                android:targetPackage="com.xiaomi.dirac" />
+        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory
