@@ -229,6 +229,9 @@ BOARD_USES_QC_TIME_SERVICES := true
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
+# USB
+TARGET_QTI_USB_SUPPORTS_AUDIO_ACCESSORY := true
+
 # VNDK
 BOARD_VNDK_VERSION := current
 
