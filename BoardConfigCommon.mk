@@ -49,7 +49,6 @@ BOARD_KERNEL_CMDLINE := \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x37 \
     printk.devkmsg=on \
-    sched_enable_hmp=1 \
     service_locator.enable=1 \
     usbcore.autosuspend=7 \
     user_debug=31 \
