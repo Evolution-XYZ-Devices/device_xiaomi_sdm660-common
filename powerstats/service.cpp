@@ -23,8 +23,6 @@
 #include <pixelpowerstats/AidlStateResidencyDataProvider.h>
 #include <pixelpowerstats/GenericStateResidencyDataProvider.h>
 #include <pixelpowerstats/PowerStats.h>
-#include <pixelpowerstats/WlanStateResidencyDataProvider.h>
-#include <pixelpowerstats/DisplayStateResidencyDataProvider.h>
 #include "RailDataProvider.h"
 using android::OK;
 using android::sp;
@@ -41,76 +39,12 @@ using android::hardware::power::stats::V1_0::implementation::PowerStats;
 // Pixel specific
 using android::hardware::google::pixel::powerstats::AidlStateResidencyDataProvider;
 using android::hardware::google::pixel::powerstats::GenericStateResidencyDataProvider;
-using android::hardware::google::pixel::powerstats::PowerEntityConfig;
-using android::hardware::google::pixel::powerstats::StateResidencyConfig;
 using android::hardware::google::pixel::powerstats::RailDataProvider;
-using android::hardware::google::pixel::powerstats::WlanStateResidencyDataProvider;
-using android::hardware::google::pixel::powerstats::DisplayStateResidencyDataProvider;
 int main(int /* argc */, char ** /* argv */) {
     ALOGI("power.stats service 1.0 is starting.");
-    bool isDebuggable = android::base::GetBoolProperty("ro.debuggable", false);
     PowerStats *service = new PowerStats();
     // Add rail data provider
     service->setRailDataProvider(std::make_unique<RailDataProvider>());
-    // Add power entities related to rpmh
-    const uint64_t RPM_CLK = 19200;  // RPM runs at 19.2Mhz. Divide by 19200 for msec
-    std::function<uint64_t(uint64_t)> rpmConvertToMs = [](uint64_t a) { return a / RPM_CLK; };
-    std::vector<StateResidencyConfig> rpmStateResidencyConfigs = {
-        {.name = "Sleep",
-         .entryCountSupported = true,
-         .entryCountPrefix = "Sleep Count:",
-         .totalTimeSupported = true,
-         .totalTimePrefix = "Sleep Accumulated Duration:",
-         .totalTimeTransform = rpmConvertToMs,
-         .lastEntrySupported = true,
-         .lastEntryPrefix = "Sleep Last Entered At:",
-         .lastEntryTransform = rpmConvertToMs}};
-    sp<GenericStateResidencyDataProvider> rpmSdp =
-        new GenericStateResidencyDataProvider("/sys/power/rpmh_stats/master_stats");
-    uint32_t apssId = service->addPowerEntity("APSS", PowerEntityType::SUBSYSTEM);
-    rpmSdp->addEntity(apssId, PowerEntityConfig("APSS", rpmStateResidencyConfigs));
-    uint32_t mpssId = service->addPowerEntity("MPSS", PowerEntityType::SUBSYSTEM);
-    rpmSdp->addEntity(mpssId, PowerEntityConfig("MPSS", rpmStateResidencyConfigs));
-    uint32_t adspId = service->addPowerEntity("ADSP", PowerEntityType::SUBSYSTEM);
-    rpmSdp->addEntity(adspId, PowerEntityConfig("ADSP", rpmStateResidencyConfigs));
-    uint32_t adspIslandId = service->addPowerEntity("ADSP_ISLAND", PowerEntityType::SUBSYSTEM);
-    rpmSdp->addEntity(adspIslandId, PowerEntityConfig("ADSP_ISLAND", rpmStateResidencyConfigs));
-    uint32_t cdspId = service->addPowerEntity("CDSP", PowerEntityType::SUBSYSTEM);
-    rpmSdp->addEntity(cdspId, PowerEntityConfig("CDSP", rpmStateResidencyConfigs));
-    service->addStateResidencyDataProvider(std::move(rpmSdp));
-    // Add SoC power entity
-    std::vector<StateResidencyConfig> socStateResidencyConfigs = {
-        {.name = "AOSD",
-         .header = "RPM Mode:aosd",
-         .entryCountSupported = true,
-         .entryCountPrefix = "count:",
-         .totalTimeSupported = true,
-         .totalTimePrefix = "actual last sleep(msec):",
-         .lastEntrySupported = false},
-        {.name = "CXSD",
-         .header = "RPM Mode:cxsd",
-         .entryCountSupported = true,
-         .entryCountPrefix = "count:",
-         .totalTimeSupported = true,
-         .totalTimePrefix = "actual last sleep(msec):",
-         .lastEntrySupported = false}};
-    sp<GenericStateResidencyDataProvider> socSdp =
-        new GenericStateResidencyDataProvider("/sys/power/system_sleep/stats");
-    uint32_t socId = service->addPowerEntity("SoC", PowerEntityType::POWER_DOMAIN);
-    socSdp->addEntity(socId, PowerEntityConfig(socStateResidencyConfigs));
-    service->addStateResidencyDataProvider(socSdp);
-    if (isDebuggable) {
-        // Add WLAN power entity
-        uint32_t wlanId = service->addPowerEntity("WLAN", PowerEntityType::SUBSYSTEM);
-        sp<WlanStateResidencyDataProvider> wlanSdp =
-            new WlanStateResidencyDataProvider(wlanId, "/sys/kernel/wifi/power_stats");
-        service->addStateResidencyDataProvider(wlanSdp);
-    }
-    uint32_t displayId = service->addPowerEntity("Display", PowerEntityType::SUBSYSTEM);
-    sp<DisplayStateResidencyDataProvider> displaySdp =
-        new DisplayStateResidencyDataProvider(displayId,
-        "/sys/class/backlight/panel0-backlight/state", {"Off", "LP", "1080x2340@60", "1080x2340@90"});
-    service->addStateResidencyDataProvider(displaySdp);
     // Add Power Entities that require the Aidl data provider
     sp<AidlStateResidencyDataProvider> aidlSdp = new AidlStateResidencyDataProvider();
     uint32_t citadelId = service->addPowerEntity("Citadel", PowerEntityType::SUBSYSTEM);
