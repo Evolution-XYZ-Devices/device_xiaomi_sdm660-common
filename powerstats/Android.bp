@@ -1,0 +1,32 @@
+//
+// Copyright (C) 2018 The Android Open Source Project
+//
+// SPDX-License-Identifier: Apache-2.0
+cc_binary {
+    name: "android.hardware.power.stats@1.0-service.pixel",
+    relative_install_path: "hw",
+    vintf_fragments: ["android.hardware.power.stats@1.0-service.pixel.xml"],
+    init_rc: ["android.hardware.power.stats@1.0-service.pixel.rc"],
+    srcs: ["service.cpp",
+           "RailDataProvider.cpp",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+    static_libs: [
+        "libpixelpowerstats",
+    ],
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "libhidlbase",
+        "libfmq",
+        "liblog",
+        "libutils",
+        "android.hardware.power.stats@1.0",
+        "pixelpowerstats_provider_aidl_interface-cpp",
+        "libbinder",
+    ],
+    vendor: true,
+}
