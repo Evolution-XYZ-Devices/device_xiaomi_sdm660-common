@@ -3,10 +3,10 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 cc_binary {
-    name: "android.hardware.power.stats@1.0-service.pixel",
+    name: "android.hardware.power.stats@1.0-service.xiaomi_sdm660",
     relative_install_path: "hw",
-    vintf_fragments: ["android.hardware.power.stats@1.0-service.pixel.xml"],
-    init_rc: ["android.hardware.power.stats@1.0-service.pixel.rc"],
+    vintf_fragments: ["android.hardware.power.stats@1.0-service.xiaomi_sdm660.xml"],
+    init_rc: ["android.hardware.power.stats@1.0-service.xiaomi_sdm660.rc"],
     srcs: ["service.cpp",
            "RailDataProvider.cpp",
     ],

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.power.stats@1.0-service.pixel"
+#define LOG_TAG "android.hardware.power.stats@1.0-service.xiaomi_sdm660"
 #include <android-base/properties.h>
 #include <android/log.h>
 #include <binder/IPCThreadState.h>
