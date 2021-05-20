@@ -1012,10 +1012,10 @@
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
 
-    <!-- Smart charge sysfs node and value for suspend/resume charging-->
-    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
-    <string name="config_SmartChargingSuspendValue" translatable="false">1</string>
-    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
+    <!-- Adaptive charge sysfs node and value for suspend/resume charging-->
+    <string name="config_adaptiveChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_adaptiveChargingSuspendValue" translatable="false">1</string>
+    <string name="config_adaptiveChargingResumeValue" translatable="false">0</string>
 
     <!-- Enables or disables fading edges when marquee is enabled in TextView.
          Off by default, since the framebuffer readback used to implement the
