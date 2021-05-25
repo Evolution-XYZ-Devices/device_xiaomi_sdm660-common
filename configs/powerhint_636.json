@@ -130,6 +130,28 @@
         ""
       ],
       "Type": "Property"
+    },
+    {
+      "Name": "Dex2oatThreads",
+      "Path": "vendor.powerhal.dalvik.vm.dex2oat-threads",
+      "Values": [
+          "1",
+          "2",
+          "4",
+          "6"
+      ],
+      "Type": "Property"
+    },
+    {
+      "Name": "Dex2oatCPUSet",
+      "Path": "vendor.powerhal.dalvik.vm.dex2oat-cpu-set",
+      "Values": [
+          "2,3",
+          "0,1,2,3",
+          "0,1,2,3,4,5",
+          "0,1,2,3,4,5,6,7"
+      ],
+      "Type": "Property"
     }
   ],
   "Actions": [
