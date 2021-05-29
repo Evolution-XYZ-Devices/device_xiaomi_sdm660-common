@@ -8,4 +8,4 @@ type dirac_prop, property_type;
 type vendor_power_prop, property_type;
 
 # Thermal engine
-type thermal_engine_prop, property_type;
+type vendor_thermal_prop, property_type;

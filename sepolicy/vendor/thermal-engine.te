@@ -4,5 +4,5 @@ allow thermal-engine sysfs:dir r_dir_perms;
 allow thermal-engine self:capability { chown fowner };
 dontaudit thermal-engine self:capability dac_override;
 
-set_prop(thermal-engine, thermal_engine_prop);
+set_prop(thermal-engine, vendor_thermal_prop);
 r_dir_file(thermal-engine, sysfs_thermal)
