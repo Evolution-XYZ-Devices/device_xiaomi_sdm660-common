@@ -11,6 +11,9 @@
 /dev/blkio(/.*)?                                                                                                            u:object_r:blkio_dev:s0
 /dev/blkio/background(/.*)?                                                                                                 u:object_r:blkio_dev:s0
 
+# CNE
+/(vendor|system/vendor)/bin/mutualex                                                                                        u:object_r:vendor_mutualex_exec:s0
+
 # Debug
 /sys/kernel/debug/mmc0/mmc0:0001/ext_csd                                                                                    u:object_r:debugfs_mmc:s0
 

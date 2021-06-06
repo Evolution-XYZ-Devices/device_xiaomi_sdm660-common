@@ -230,20 +230,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.dev_name=rmnet_usb0 \
     persist.debug.coresight.config=stm-events \
+    persist.radio.multisim.config=dsds \
+    persist.vendor.dpmhalservice.enable=1 \
+    persist.vendor.qti.telephony.vt_cam_interface=2 \
+    persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.sib16_support=1 \
-    persist.vendor.qti.telephony.vt_cam_interface=1 \
     persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.data_con_rprt=1 \
-    persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.procedure_bytes=SKIP \
-    persist.radio.multisim.config=dsds \
+    persist.vendor.radio.rat_on=combine \
+    persist.vendor.radio.sib16_support=1 \
     ro.telephony.iwlan_operation_mode=legacy \
     ro.vendor.use_data_netmgrd=true \
     ro.telephony.default_network=22,22 \
-    vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
-    persist.vendor.radio.add_power_save=1
+    vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # Rendering
 PRODUCT_PROPERTY_OVERRIDES += \

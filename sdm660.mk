@@ -500,7 +500,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4 \
+    android.hardware.radio@1.5 \
     android.hardware.radio@1.2 \
     android.hardware.radio.config@1.1 \
     android.hardware.secure_element@1.0 \
@@ -520,6 +520,7 @@ PRODUCT_BOOT_JARS += \
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/seccomp/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     $(COMMON_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(COMMON_PATH)/seccomp/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
@@ -546,10 +547,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel
-
-# Shims
-PRODUCT_PACKAGES += \
-    libcutils_shim
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
