@@ -222,7 +222,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
     libqdMetaData \
-    libqdMetaData.system \
+    libqdMetaData.vendor \
     libstagefright_enc_common \
     libtinyxml \
     vendor.display.config@2.0 \
