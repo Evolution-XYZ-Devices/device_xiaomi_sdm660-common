@@ -72,6 +72,8 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 sys.thermal.data.path=/data/vendor/thermal/
 
 # WFD
+ro.hdmi.enable=true
+ro.hdmi.mirror.enable=true
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
