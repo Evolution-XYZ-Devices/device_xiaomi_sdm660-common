@@ -73,12 +73,6 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 # Thermal configs path
 sys.thermal.data.path=/data/vendor/thermal/
 
-# WFD
-ro.hdmi.enable=true
-ro.hdmi.mirror.enable=true
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
-
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
