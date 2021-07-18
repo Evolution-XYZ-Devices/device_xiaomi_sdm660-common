@@ -40,6 +40,8 @@ endif
 # APEX image
 ifeq ($(ENABLE_APEX), true)
 DEXPREOPT_GENERATE_APEX_IMAGE := true
+else
+OVERRIDE_TARGET_FLATTEN_APEX := true
 endif
 
 # ANT+
