@@ -98,7 +98,7 @@ on early-boot
     write /dev/ipa 1
 
 on boot
-    start rmt_storage
+    start vendor.rmt_storage
     start rfs_access
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-7
