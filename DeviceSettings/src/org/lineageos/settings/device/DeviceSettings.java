@@ -45,8 +45,10 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String NOTIF_LED_PATH = "/sys/class/leds/white/max_brightness";
 
     public static final  String CATEGORY_AUDIO_AMPLIFY = "audio_amplify";
+    public static final  String PREF_EARPIECE_GAIN = "earpiece_gain";
     public static final  String PREF_HEADPHONE_GAIN = "headphone_gain";
     public static final  String PREF_MIC_GAIN = "mic_gain";
+    public static final  String EARPIECE_GAIN_PATH = "/sys/kernel/sound_control/earpiece_gain";
     public static final  String HEADPHONE_GAIN_PATH = "/sys/kernel/sound_control/headphone_gain";
     public static final  String MIC_GAIN_PATH = "/sys/kernel/sound_control/mic_gain";
 
@@ -107,6 +109,13 @@ public class DeviceSettings extends PreferenceFragment implements
 
         // Amplify Audio 
         PreferenceCategory gainCategory = (PreferenceCategory) findPreference(CATEGORY_AUDIO_AMPLIFY);
+        // Earpiece Gain
+        if (FileUtils.fileWritable(EARPIECE_GAIN_PATH)) {
+           CustomSeekBarPreference earpieceGain = (CustomSeekBarPreference) findPreference(PREF_EARPIECE_GAIN);
+           earpieceGain.setOnPreferenceChangeListener(this);
+        } else {
+          gainCategory.removePreference(findPreference(PREF_EARPIECE_GAIN));
+        }
         // Headphone Gain
         if (FileUtils.fileWritable(HEADPHONE_GAIN_PATH)) {
            CustomSeekBarPreference headphoneGain = (CustomSeekBarPreference) findPreference(PREF_HEADPHONE_GAIN);
@@ -182,6 +191,10 @@ public class DeviceSettings extends PreferenceFragment implements
             case PREF_VIBRATION_STRENGTH:
                 double vibrationValue = (int) value / 100.0 * (MAX_VIBRATION - MIN_VIBRATION) + MIN_VIBRATION;
                 FileUtils.setValue(VIBRATION_STRENGTH_PATH, vibrationValue);
+                break;
+
+            case PREF_EARPIECE_GAIN:
+                FileUtils.setValue(EARPIECE_GAIN_PATH, (int) value);
                 break;
 
             case PREF_HEADPHONE_GAIN:

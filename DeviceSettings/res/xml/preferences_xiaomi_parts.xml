@@ -47,6 +47,14 @@
 
         <org.lineageos.settings.device.preferences.CustomSeekBarPreference
             android:defaultValue="0"
+            android:key="earpiece_gain"
+            android:max="20"
+            app:min="-10"
+            android:icon="@drawable/ic_earpiece"
+            android:title="@string/earpiece_gain"/>
+        
+        <org.lineageos.settings.device.preferences.CustomSeekBarPreference
+            android:defaultValue="0"
             android:key="headphone_gain"
             android:max="20"
             app:min="-10"

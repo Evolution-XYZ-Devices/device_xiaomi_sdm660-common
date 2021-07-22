@@ -92,6 +92,7 @@
     
     <!-- Audio amplification -->
     <string name="audio_amplify">Amplify Audio</string>
+    <string name="earpiece_gain">Earpiece Gain</string>
     <string name="headphone_gain">Headphone Gain</string>
     <string name="mic_gain">Microphone Gain</string>
     

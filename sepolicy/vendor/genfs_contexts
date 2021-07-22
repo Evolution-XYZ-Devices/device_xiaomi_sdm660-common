@@ -10,6 +10,7 @@ genfscon sysfs /devices/virtual/graphics/fb0/measured_fps                       
 genfscon sysfs /class/graphics/fb0/measured_fps                                                                                             u:object_r:sysfs_fpsinfo:s0
 genfscon sysfs /kernel/sound_control/headphone_gain                                                                                         u:object_r:sysfs_headphonegain:s0
 genfscon sysfs /kernel/sound_control/mic_gain                                                                                               u:object_r:sysfs_micgain:s0
+genfscon sysfs /kernel/sound_control/earpiece_gain                                                                                                   u:object_r:sysfs_earpiecegain:s0
 
 # Fingerprint
 genfscon sysfs /devices/soc/soc:fingerprint_fpc/device_prepare                                                                              u:object_r:sysfs_fingerprint:s0
