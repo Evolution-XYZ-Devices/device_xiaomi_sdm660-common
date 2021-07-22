@@ -5,6 +5,13 @@ genfscon sysfs /devices/soc/c176000.i2c/i2c-2/2-001d            u:object_r:sysfs
 genfscon sysfs /devices/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@3/video4linux/video5/name                                     u:object_r:sysfs_graphics:s0
 genfscon sysfs /camera_sensorid/sensorid                        u:object_r:sysfs_graphics:s0
 
+# DeviceSettings
+genfscon sysfs /devices/virtual/graphics/fb0/measured_fps                                                                                            u:object_r:sysfs_fpsinfo:s0
+genfscon sysfs /class/graphics/fb0/measured_fps                                                                                                      u:object_r:sysfs_fpsinfo:s0
+genfscon sysfs /kernel/sound_control/headphone_gain                                                                                                  u:object_r:sysfs_headphonegain:s0
+genfscon sysfs /kernel/sound_control/mic_gain                                                                                                        u:object_r:sysfs_micgain:s0
+genfscon sysfs /kernel/sound_control/earpiece_gain                                                                                                   u:object_r:sysfs_earpiecegain:s0
+
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc        u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fpc1020                u:object_r:sysfs_fingerprint:s0
