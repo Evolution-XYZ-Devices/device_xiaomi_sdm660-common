@@ -7,7 +7,7 @@ import org.lineageos.settings.device.FileUtils;
 
 public class NotificationLedSeekBarPreference extends SecureSettingCustomSeekBarPreference {
 
-    public static final String NOTIF_LED_PATH = "/sys/class/leds/white/brightness";
+    public static final String NOTIF_LED_PATH = "/sys/class/leds/red/brightness";
 
     public NotificationLedSeekBarPreference(Context context, AttributeSet attrs) {
         super(context, attrs);

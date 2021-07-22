@@ -41,7 +41,7 @@ public class DeviceSettings extends PreferenceFragment implements
 
     public static final String CATEGORY_NOTIF = "notification_led";
     public static final String PREF_NOTIF_LED = "notification_led_brightness";
-    public static final String NOTIF_LED_PATH = "/sys/class/leds/white/max_brightness";
+    public static final String NOTIF_LED_PATH = "/sys/class/leds/red/max_brightness";
 
     public static final  String CATEGORY_AUDIO_AMPLIFY = "audio_amplify";
     public static final  String PREF_EARPIECE_GAIN = "earpiece_gain";
