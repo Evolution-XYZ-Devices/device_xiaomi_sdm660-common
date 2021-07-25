@@ -30,6 +30,7 @@ persist.vendor.color.matrix=2
 persist.hwc.enable_vds=1
 ro.qualcomm.cabl=0
 video.disable.ubwc=1
+vendor.display.disable_rotator_downscale=1
 
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
