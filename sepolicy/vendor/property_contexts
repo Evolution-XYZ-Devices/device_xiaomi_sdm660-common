@@ -57,6 +57,7 @@ ro.build.software.version               u:object_r:telephony_status_prop:s0
 ro.product.mod_device                   u:object_r:telephony_status_prop:s0
 ro.fota.oem                             u:object_r:telephony_status_prop:s0
 ro.miui.                                u:object_r:telephony_status_prop:s0
+rild.libpath				u:object_r:vendor_rild_libpath_prop:s0
 
 # Thermal engine
 vendor.thermal.config                   u:object_r:vendor_thermal_prop:s0
