@@ -23,4 +23,7 @@
          3 = right side
     -->
     <integer name="config_fingerprintSensorLocation">0</integer>
+
+    <!-- Adaptive Charging -->
+    <bool name="config_supportAdaptiveCharging">true</bool>
 </resources>
