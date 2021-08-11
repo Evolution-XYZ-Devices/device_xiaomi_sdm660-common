@@ -287,11 +287,13 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|50ee00e9ecf66258efbc544492
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml|1b556a6b981dfe8c5d62311b59758d370dd6dd10
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|dee5b7838ac561a2292e89fc0c4ccd1932224215
-vendor/lib/mediadrm/libwvdrmengine.so|a8bdbbfb3aa222095f1cb7658ec5c46fa41dd560
 vendor/lib64/libcpion.so|ff24ef248bb35fd3cc1081a63f33c2565dc6351f
 vendor/lib64/libhdcpsrm.so|ee8e7c29e2b716a8bb07c3cbb730e34d8af3c64e
-vendor/lib64/libwvhidl.so|adb4b2c6e65b98310d051b8b00573b55bc365435
-vendor/lib64/mediadrm/libwvdrmengine.so|80280a2292db04a1eb3750df6897dea96f0f62f5
+
+# DRM (Widevine) - from jasmine-user 10 QKQ1.190910.002 V11.0.28.0.QDIMIXM
+vendor/lib/mediadrm/libwvdrmengine.so|01d82254a8061bbdecaa96a29bf4b15d6046f07d
+vendor/lib64/libwvhidl.so|0466cd3b2a7b93efd23945e2637430513472ad7c
+vendor/lib64/mediadrm/libwvdrmengine.so|fc4fff12e92623838e7d04e0b9fe0e7330692f8a
 
 # DRM (TUI) - from LA.UM.8.2.r1-07500-sdm660.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|d4d025e0a12af87f65104fe07801517938733603
