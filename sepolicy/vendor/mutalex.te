@@ -1,0 +1,6 @@
+type vendor_mutualex, domain;
+type vendor_mutualex_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_mutualex)
+
+allow vendor_mutualex self:socket create_socket_perms_no_ioctl;

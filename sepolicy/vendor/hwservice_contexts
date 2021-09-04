@@ -1,3 +1,4 @@
+android.hardware.memtrack::IMemtrack                                    u:object_r:hal_memtrack_hwservice:s0
 com.fingerprints.extension::IFingerprintCalibration                     u:object_r:hal_fingerprint_hwservice:s0
 com.fingerprints.extension::IFingerprintEngineering                     u:object_r:hal_fingerprint_hwservice:s0
 com.fingerprints.extension::IFingerprintNavigation                      u:object_r:hal_fingerprint_hwservice:s0

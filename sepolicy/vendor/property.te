@@ -1,6 +1,8 @@
 type hal_fingerprint_prop, property_type;
 type mlipay_prop, property_type;
 
+vendor_restricted_prop(vendor_camera_prop);
+
 # Dirac
 type dirac_prop, property_type;
 

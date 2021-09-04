@@ -1,0 +1,2 @@
+r_dir_file(cdsprpcd, public_adsprpcd_file)
+allow cdsprpcd xdsp_device:chr_file r_file_perms;
