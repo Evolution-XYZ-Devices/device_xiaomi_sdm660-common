@@ -611,10 +611,6 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
-# WiFi Display JAR
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # DeviceSettings
 PRODUCT_PACKAGES += \
    DeviceSettings
