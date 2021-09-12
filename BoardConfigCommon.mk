@@ -198,9 +198,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
-# Properties
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_QCOM_BSP := false
