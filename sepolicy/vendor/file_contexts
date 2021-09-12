@@ -49,6 +49,9 @@
 /sys/devices/platform/kcal_ctrl.0(/.*)?                                                                                     u:object_r:kcal_dev:s0
 /sys/bus/platform/drivers/kcal_ctrl(/.*)?                                                                                   u:object_r:kcal_dev:s0
 
+# IR HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.0-service\.xiaomi_sdm660                                                   u:object_r:hal_ir_default_exec:s0
+
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sdm660                                         u:object_r:hal_light_default_exec:s0
 
