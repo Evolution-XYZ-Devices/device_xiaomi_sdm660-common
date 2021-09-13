@@ -111,6 +111,7 @@ setup_vendor "$DEVICE_COMMON" "$VENDOR" "$ROOT" true $CLEAN_VENDOR
 
 if [[ "$ONLY_DEVICE" = "false" ]] && [[ -s "${COMMON_DIR}"/proprietary-files.txt ]]; then
     extract "$COMMON_DIR"/proprietary-files.txt "$SRC" "${KANG}" --section "${SECTION}"
+    extract "$COMMON_DIR"/proprietary-files-ir.txt "$SRC" "${KANG}" --section "${SECTION}"
 fi
 if [[ "$ONLY_COMMON" = "false" ]] && [[ -s "${DEVICE_DIR}"/proprietary-files.txt ]]; then
     if [[ ! "$IS_COMMON" = "true" ]]; then
