@@ -174,10 +174,6 @@ PRODUCT_PACKAGES += \
 # Boot animation
 TARGET_BOOTANIMATION_SIZE := 1080p
 
-# Broadcastradio
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5 \
