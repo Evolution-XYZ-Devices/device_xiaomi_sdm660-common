@@ -230,7 +230,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.dev_name=rmnet_usb0 \
     persist.debug.coresight.config=stm-events \
-    persist.radio.multisim.config=dsds \
     persist.vendor.dpmhalservice.enable=1 \
     persist.vendor.qti.telephony.vt_cam_interface=2 \
     persist.vendor.radio.add_power_save=1 \
