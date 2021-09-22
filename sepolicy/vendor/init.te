@@ -1,4 +1,5 @@
 allow init adsprpcd_file:file mounton;
+allow init apex_metadata_file:lnk_file read;
 allow init socket_device:sock_file { unlink setattr create };
 allow init sysfs_graphics:file { read open };
 allow init sysfs_battery_supply:file setattr;

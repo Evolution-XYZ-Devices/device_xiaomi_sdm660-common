@@ -1,1 +1,2 @@
+allow vold vendor_apex_file:file r_file_perms;
 allow vold sysfs_mmc_host:file write;
