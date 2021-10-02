@@ -205,6 +205,15 @@ PRODUCT_PACKAGES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
 
+# ConsumerIR
+ifeq ($(BOARD_HAVE_IR),true)
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-service.xiaomi_sdm660
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
+endif
+
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
