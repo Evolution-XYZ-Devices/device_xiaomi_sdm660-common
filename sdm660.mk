@@ -298,6 +298,22 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
+    android.hardware.bluetooth@1.0.vendor \
+    android.frameworks.displayservice@1.0.vendor \
+    android.hardware.drm@1.4.vendor \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.neuralnetworks@1.3.vendor \
+    android.hardware.keymaster@4.0.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.0.vendor \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.gnss@2.1.vendor
+
 # IDC
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
