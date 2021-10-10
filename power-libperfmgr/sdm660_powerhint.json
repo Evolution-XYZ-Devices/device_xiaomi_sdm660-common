@@ -107,34 +107,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "TASchedtuneBoost",
-      "Path": "/dev/stune/top-app/schedtune.boost",
-      "Values": [
-        "10",
-        "5",
-        "1"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBWHystTriggerCount",
-      "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count",
-      "Values": [
-        "0",
-        "3"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBWHistMemory",
-      "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory",
-      "Values": [
-        "0",
-        "20"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "CPUBWMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpubw/min_freq",
       "Values": [
@@ -228,24 +200,6 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "TASchedtuneBoost",
-      "Duration": 0,
-      "Value": "10"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUBWHystTriggerCount",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUBWHistMemory",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "INTERACTION",
       "Node": "CPUBWMinFreq",
       "Duration": 0,
       "Value": "3879"
@@ -267,18 +221,6 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 3000,
       "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBWHystTriggerCount",
-      "Duration": 3000,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBWHistMemory",
-      "Duration": 3000,
-      "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
