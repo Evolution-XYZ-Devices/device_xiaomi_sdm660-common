@@ -25,6 +25,11 @@
 # Common Tree Path
 COMMON_PATH := device/xiaomi/sdm660-common
 
+# Board
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := sdm660
+OVERRIDE_QCOM_HARDWARE_VARIANT := msm8998-r
+
 # A/B
 ifeq ($(ENABLE_AB), true)
 AB_OTA_UPDATER := true

@@ -21,7 +21,7 @@
 # definition file).
 #
 
-# Board
+# Product
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := sdm660
 
