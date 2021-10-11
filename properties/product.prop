@@ -8,7 +8,6 @@ ro.max.fling_velocity=20000
 
 # GMS
 ro.com.google.clientidbase.ms=android-xiaomi-rev2
-ro.com.google.clientidbase=android-xiaomi
 ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
