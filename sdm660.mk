@@ -577,6 +577,12 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Tin
+PRODUCT_PACKAGES += \
+    libtinyxml \
+    tinyxml2 \
+    libxml2 
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.mock
