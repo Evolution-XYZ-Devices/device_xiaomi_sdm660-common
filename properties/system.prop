@@ -52,6 +52,8 @@ persist.timed.enable=true
 
 # Radio
 DEVICE_PROVISIONED=1
+persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.sys.fflag.override.settings_provider_model=false
 persist.backup.ntpServer=0.pool.ntp.org
 persist.radio.aosp_usr_pref_sel=true
 persist.radio.add_power_save=1
