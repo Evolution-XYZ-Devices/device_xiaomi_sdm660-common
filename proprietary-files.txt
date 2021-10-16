@@ -680,6 +680,9 @@ vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql|4701219a79190
 vendor/bin/rmt_storage|2633a072880c39df55f1ba1225438a79911a42e3
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
 
+# Radio - Telephony - from jasmine
+-system_ext/app/datastatusnotification/datastatusnotification.apk|272156d88ac5a05f76fcea7f1a31087e1acbcd85
+
 # Radio - Telephony - from LA.QSSI.11.0.r1-11600-qssi.0
 -product/app/CallFeaturesSetting/CallFeaturesSetting.apk|2f579f81f4030fe2116c3d248229c260df7c0373
 -system/framework/tcmclient.jar|cdd1ea7143a5a7acc3909b5cfa706650179647c7
@@ -694,7 +697,6 @@ vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa
 -system_ext/app/SimContact/SimContact.apk|bdd9d9a7accd4cda9c71bd8abce6de8a7a451226
 -system_ext/app/SimSettings/SimSettings.apk|1a82c3325e959dff402d979d2092650395e0df79
 -system_ext/app/atfwd/atfwd.apk|1224a0ea61601cf002262aa5f042a68e55e30c3b
--system_ext/app/datastatusnotification/datastatusnotification.apk|2fcf2e570818eb317de45f42c0a674db875b6ee4
 -system_ext/app/embms/embms.apk|e30c32f9e2e5ee2580ff788c76a8969b45199a96
 -system_ext/app/imssettings/imssettings.apk|8b47c43d56228dcce93cc8c07c6ceb08cb3d2fe5
 -system_ext/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk|3ec7ba081138560b1d0dd3ba78fd3898127a76a7
