@@ -47,7 +47,6 @@
         <activity
             android:name=".DeviceSettingsActivity"
             android:exported="true"
-            android:icon="@drawable/ic_mi"
             android:label="@string/advanced_settings"
             android:launchMode="singleTask">
             <intent-filter>
@@ -60,8 +59,8 @@
                 android:name="com.android.settings.dismiss"
                 android:value="9,13,30" />
             <meta-data
-                android:name="com.android.settings.bg.hint"
-                android:resource="@color/homepage_parts_background" />
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_mi"/>
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.system" />
