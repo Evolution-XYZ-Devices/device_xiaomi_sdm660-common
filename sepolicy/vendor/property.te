@@ -10,7 +10,7 @@ type persist_camera_prop, property_type;
 type dirac_prop, property_type;
 
 # Power
-type vendor_power_prop, property_type;
+vendor_internal_prop(vendor_power_prop)
 
 # Thermal engine
 type vendor_thermal_prop, property_type;
