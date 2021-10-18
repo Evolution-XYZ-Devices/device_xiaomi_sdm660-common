@@ -299,7 +299,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.drm@1.4.vendor \
-    android.hardware.gatekeeper@1.0 \
     android.hardware.gatekeeper@1.0.vendor \
     android.hardware.media.c2@1.1.vendor \
     android.hardware.neuralnetworks@1.3 \
