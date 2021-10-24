@@ -14,3 +14,5 @@ allow hal_camera_default camera_data_file:dir create_dir_perms;
 allow hal_camera_default camera_data_file:file create_file_perms;
 allow hal_camera_default default_prop:file { getattr open read };
 allow hal_camera_default vendor_video_prop:file { getattr open read };
+
+allow hal_camera_default diag_device:chr_file { open read write };
