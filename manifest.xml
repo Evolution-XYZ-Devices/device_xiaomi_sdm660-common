@@ -29,12 +29,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
-        <fqname>@5.0::IDevicesFactory/default</fqname>
+        <fqname>@7.0::IDevicesFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.audio.effect</name>
         <transport>hwbinder</transport>
-        <fqname>@5.0::IEffectsFactory/default</fqname>
+        <fqname>@7.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.authsecret</name>
