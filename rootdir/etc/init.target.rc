@@ -274,7 +274,3 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
 on property:sys.boot_completed=1
     # Enable EAS
     write /proc/sys/kernel/sched_energy_aware 1
-
-on property:persist.sys.device_provisioned=1
-    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6,7
-    setprop dalvik.vm.dex2oat-threads 8
