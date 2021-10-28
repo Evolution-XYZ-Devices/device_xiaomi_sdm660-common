@@ -404,6 +404,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # RRO configuration
 TARGET_USES_RRO := true
+PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
