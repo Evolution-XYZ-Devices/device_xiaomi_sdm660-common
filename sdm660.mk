@@ -302,6 +302,15 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(COMMON_PATH)/configs/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-goodix.idc
 
+# IFAAService
+PRODUCT_PACKAGES += \
+    IFAAService \
+    org.ifaa.android.manager
+
+# IFAA JAR
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
