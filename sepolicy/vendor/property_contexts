@@ -74,7 +74,6 @@ rild.libpath				u:object_r:vendor_rild_libpath_prop:s0
 
 # Thermal engine
 vendor.thermal.config                   u:object_r:vendor_thermal_prop:s0
-sys.thermal.                            u:object_r:vendor_thermal_prop:s0
 
 # UI
 sys.use_fifo_ui                         u:object_r:vendor_video_prop:s0
