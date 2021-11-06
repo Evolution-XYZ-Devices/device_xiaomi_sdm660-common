@@ -86,8 +86,9 @@
 
     <!-- Audio amplification -->
     <string name="audio_amplify">Amplification audio</string>
-    <string name="headphone_gain">Gain de l\'écouteur</string>
-    <string name="mic_gain">Gain du microphone</string>
+    <string name="headphone_gain">Gain du casque</string>
+    <string name="mic_gain">Gain du micro</string>
+    <string name="earpiece_gain">Gain de l\'écouteur</string>
 
      <!-- Dirac -->
     <string name="audio_title">Dirac</string>
