@@ -2,5 +2,8 @@
 ro.charger.disable_init_blank=true
 ro.charger.enable_suspend=true
 
+# Blur
+ro.surface_flinger.supports_background_blur=0
+
 # Radio
 ro.telephony.block_binder_thread_on_incoming_calls=false
