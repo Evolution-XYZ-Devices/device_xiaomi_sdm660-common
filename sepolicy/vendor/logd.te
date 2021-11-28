@@ -1,1 +1,0 @@
-allow logd blkio_dev:dir search;

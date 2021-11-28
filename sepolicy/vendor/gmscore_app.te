@@ -1,4 +1,2 @@
-allow gmscore_app blkio_dev:dir search;
-
 binder_call(gmscore_app, hal_memtrack_default);
 dontaudit gmscore_app { bt_firmware_file firmware_file }:filesystem getattr;

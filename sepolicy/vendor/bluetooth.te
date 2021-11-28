@@ -1,2 +1,1 @@
 get_prop(bluetooth, vendor_bluetooth_prop)
-allow bluetooth blkio_dev:dir search;
