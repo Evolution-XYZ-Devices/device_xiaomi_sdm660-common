@@ -1,2 +1,1 @@
 allow ssgtzd self:socket create_socket_perms_no_ioctl;
-allow ssgtzd self:qipcrtr_socket create;
