@@ -1,0 +1,1 @@
+allow priv_app persist_camera_prop:file { getattr open read };
