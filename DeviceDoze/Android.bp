@@ -15,7 +15,6 @@ android_app {
     privileged: true,
 
     static_libs: [
-        "androidx.preference_preference",
         "org.lineageos.settings.resources",
     ],
 

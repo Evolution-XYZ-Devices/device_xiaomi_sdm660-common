@@ -28,6 +28,7 @@
 
     <!-- Ambient Display -->
     <string name="ambient_display_title">Ambient Display</string>
+    <string name="ambient_enable">Enable</string>
 
     <!-- Tilt sensor -->
     <string name="tilt_sensor_title">Tilt Sensor Gestures</string>
