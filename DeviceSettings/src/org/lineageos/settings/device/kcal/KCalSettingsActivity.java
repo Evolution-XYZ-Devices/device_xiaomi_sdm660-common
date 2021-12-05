@@ -16,16 +16,16 @@
 
 package org.lineageos.settings.device.kcal;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import org.lineageos.settings.device.R;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
 
-public class KCalSettingsActivity extends Activity implements Utils {
+public class KCalSettingsActivity extends CollapsingToolbarBaseActivity implements Utils {
 
     private KCalSettings mKCalSettingsFragment;
 
