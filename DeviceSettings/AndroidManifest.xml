@@ -28,7 +28,7 @@
     <application
         android:label="@string/advanced_settings"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.SubSettingsBase">
         <receiver
             android:name=".BootReceiver"
             android:defaultToDeviceProtectedStorage="true"
