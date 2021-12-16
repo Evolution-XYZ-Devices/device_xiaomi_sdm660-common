@@ -70,6 +70,9 @@ public class DeviceSettings extends PreferenceFragment implements
     private static final String PREF_DEVICE_DOZE = "device_doze";
     private static final String PREF_DEVICE_KCAL = "device_kcal";
 
+    public static final String PREF_THERMAL = "thermal";
+    public static final String THERMAL_PATH = "/sys/devices/virtual/thermal/thermal_message/sconfig";
+
     private static final String DEVICE_DOZE_PACKAGE_NAME = "com.advanced.settings.doze";
 
     private static final String DEVICE_JASON_PACKAGE_NAME = "org.lineageos.settings.devicex";
@@ -81,6 +84,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingSwitchPreference mEnableDirac;
     private SecureSettingListPreference mHeadsetType;
     private SecureSettingListPreference mPreset;
+    private SecureSettingListPreference mTHERMAL;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -151,6 +155,12 @@ public class DeviceSettings extends PreferenceFragment implements
             startActivity(intent);
             return true;
         });
+
+        // Thermal Switch
+        mTHERMAL = (SecureSettingListPreference) findPreference(PREF_THERMAL);
+        mTHERMAL.setValue(FileUtils.getValue(THERMAL_PATH));
+        mTHERMAL.setSummary(mTHERMAL.getEntry());
+        mTHERMAL.setOnPreferenceChangeListener(this);
 
         // Dirac
         boolean enhancerEnabled;
@@ -242,6 +252,12 @@ public class DeviceSettings extends PreferenceFragment implements
                 }
                 break;
 
+            case PREF_THERMAL:
+                mTHERMAL.setValue((String) value);
+                mTHERMAL.setSummary(mTHERMAL.getEntry());
+                FileUtils.setValue(THERMAL_PATH, (String) value);
+                break;
+                
             default:
                 break;
         }
