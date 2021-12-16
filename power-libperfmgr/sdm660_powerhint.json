@@ -67,11 +67,9 @@
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
         "647000000",
-        "588000000",
         "465000000",
         "370000000",
-        "266000000",
-        "160000000"
+        "266000000"
       ],
       "ResetOnInit": true
     },
@@ -117,8 +115,8 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
-        "30",
-        "10"
+        "10",
+        "5"
       ],
       "ResetOnInit": true
     },
@@ -145,24 +143,16 @@
       "Path": "/sys/class/devfreq/soc:qcom,cpubw/min_freq",
       "Values": [
         "6881",
-        "2929",
+        "3879",
         "762"
       ],
       "ResetOnInit": true
     },
     {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "0x0000002b",
-        "0x00000064"
-      ],
-      "HoldFd": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
+        "CAMERA_STREAMING",
         "SUSTAINED_PERFORMANCE",
         ""
       ],
@@ -238,7 +228,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
       "Duration": 0,
-      "Value": "30"
+      "Value": "10"
     },
     {
       "PowerHint": "INTERACTION",
@@ -256,7 +246,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBWMinFreq",
       "Duration": 0,
-      "Value": "4943"
+      "Value": "3879"
     },
     {
       "PowerHint": "LAUNCH",
@@ -281,12 +271,6 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 3000,
       "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 4000,
-      "Value": "2"
     },
     {
       "PowerHint": "LAUNCH",
@@ -325,16 +309,64 @@
       "Value": "10000"
     },
     {
-      "PowerHint": "AUDIO_LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 0,
-      "Value": "0x0000002b"
+      "PowerHint": "CAMERA_LAUNCH",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 1000,
+      "Value": "9999999"
     },
     {
-      "PowerHint": "AUDIO_STREAMING",
-      "Node": "PMQoSCpuDmaLatency",
+      "PowerHint": "CAMERA_LAUNCH",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 1000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "CAMERA_LAUNCH",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 1000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "CAMERA_LAUNCH",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 1000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "CAMERA_SHOT",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 1000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "CAMERA_SHOT",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 1000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "CAMERA_SHOT",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 1000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "CAMERA_SHOT",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 1000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "AUDIO_LAUNCH",
+      "Node": "CPUBigClusterMinFreq",
       "Duration": 2000,
-      "Value": "0x0000002b"
+      "Value": "1401600"
+    },
+    {
+      "PowerHint": "AUDIO_LAUNCH",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 2000,
+      "Value": "9999999"
     },
     {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
