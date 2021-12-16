@@ -117,17 +117,8 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
-        "10",
-        "5"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "EnergyAware",
-      "Path": "/proc/sys/kernel/sched_energy_aware",
-      "Values": [
-        "0",
-        "1"
+        "30",
+        "10"
       ],
       "ResetOnInit": true
     },
@@ -247,7 +238,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
       "Duration": 0,
-      "Value": "10"
+      "Value": "30"
     },
     {
       "PowerHint": "INTERACTION",
