@@ -140,7 +140,6 @@ void vendor_load_persist_properties()
         property_override("persist.sys.fp.vendor", "none");
         property_override("ro.board.variant", "d9");
         property_override("vendor.display.lcd_density", "320");
-        property_override("ro.carrier", "wifi-only");
         property_override_dual("ro.product.model", "ro.vendor.product.model", "MI PAD 4");
 
         property_override ("persist.vendor.audio.calfile0","/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Bluetooth_cal.acdb");
