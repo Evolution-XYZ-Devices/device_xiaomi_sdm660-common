@@ -1,4 +1,5 @@
 allow system_app blkio_dev:dir search;
+allow system_app diag_device:chr_file { open ioctl read write };
 allow system_app kcal_dev:dir search;
 allow system_app kcal_dev:file rw_file_perms;
 allow system_app proc_vmallocinfo:file read;
