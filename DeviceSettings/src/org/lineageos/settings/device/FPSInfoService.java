@@ -163,7 +163,7 @@ public class FPSInfoService extends Service {
                 return;
             }
 
-            int neededWidth = mPaddingLeft + mPaddingRight + mMaxWidth + 40;
+            int neededWidth = mPaddingLeft + mPaddingRight + mMaxWidth;
             int neededHeight = mPaddingTop + mPaddingBottom + 40;
             if (neededWidth != mNeededWidth || neededHeight != mNeededHeight) {
                 mNeededWidth = neededWidth;
@@ -218,6 +218,7 @@ public class FPSInfoService extends Service {
             WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|
             WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
             PixelFormat.TRANSLUCENT);
+	params.y = 50;
         params.gravity = Gravity.LEFT | Gravity.TOP;
         params.setTitle("FPS Info");
 
