@@ -17,3 +17,5 @@ type sysfs_headphonegain, sysfs_type, fs_type;
 type sysfs_micgain, sysfs_type, fs_type;
 type sysfs_earpiecegain, sysfs_type, fs_type;
 
+# Hall Switch
+type hall_dev, sysfs_type, fs_type;
