@@ -1,6 +1,9 @@
 # CNE
 persist.vendor.cne.feature=1
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
