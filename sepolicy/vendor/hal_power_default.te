@@ -26,3 +26,5 @@ allow hal_power_default proc_sysctl_schedboost:file rw_file_perms;
 
 # To get/set powerhal state property
 set_prop(hal_power_default, vendor_power_prop)
+
+allow hal_power_default proc:file { open };
