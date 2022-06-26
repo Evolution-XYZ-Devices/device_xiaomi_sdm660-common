@@ -135,6 +135,9 @@ PRODUCT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
 
+# USB
+TARGET_USES_USB_GADGET_HAL := true
+
 # Verity
 # Only needed for signing
 BOARD_AVB_ENABLE := false
