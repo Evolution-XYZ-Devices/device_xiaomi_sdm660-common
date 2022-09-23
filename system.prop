@@ -4,6 +4,12 @@ persist.vendor.cne.feature=1
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
+# Iorapd
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
