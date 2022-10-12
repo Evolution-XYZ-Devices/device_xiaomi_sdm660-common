@@ -16,6 +16,94 @@
      limitations under the License.
 -->
 <resources>
+         <string name="advanced_settings">Impostazioni dispositivo</string>
+    <string name="advanced_settings_summary">Impostazioni avanzate specifiche per il dispositivo</string>
+
+    <string name="display_title">Display</string>
+
+    <!-- Mi Note 3 Settings -->
+    <string name="jason_pref_title">Impostazioni dispositivo</string>
+    <string name="jason_pref_summary">Impostazioni aggiuntive per Mi Note 3</string>
+
+    <!-- KCal -->
+    <string name="device_kcal_title">Calibrazione colori schermo</string>
+
+    <!-- Notification LED brightness -->
+    <string name="notification_title">LED di notifica</string>
+    <string name="notification_led_title">Luminosità LED</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display">Display Ambient</string>
+    <string name="advanced_doze_summary">Impostazioni ambient specifiche del dispositivo</string>
+
+    <string name="vibration_title">Feedback aptico</string>
+    <string name="vibration_strength_title">Intensità</string>
+
+    <!-- kcal -->
+    <string name="advanced_settings_kcal">Calibrazione colore schermo</string>
+    <string name="cat_colormanagement">Impostazioni colore</string>
+    <string name="cat_calibration">Calibrazione schermo</string>
+
+    <string name="kcal_enabled">Attivo</string>
+    <string name="kcal_disabled">Disattivo</string>
+    <string name="set_on_boot">Imposta all\'avvio</string>
+    <string name="color_red">Rosso</string>
+    <string name="color_green">Verde</string>
+    <string name="color_blue">Blu</string>
+    <string name="color_minimum">Minimo</string>
+    <string name="saturation">Saturazione</string>
+    <string name="value">Valore</string>
+    <string name="contrast">Contrasto</string>
+    <string name="hue">Tonalità</string>
+    <string name="grayscale">Display in scala di grigi</string>
+
+    <!-- Speaker -->
+    <string name="speaker_category">Speaker</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Pulizia speaker</string>
+    <string name="clear_speaker_summary">Riproduci un audio di 30 secondi per pulire l\'altoparlante</string>
+    <string name="clear_speaker_description">Esegui questa funzionalità una o due volte se l\'altoparlante è leggermente bloccato dalla polvere. Metti il volume multimediale al massimo.\n\nSe l\'altoparlante è completamente bloccato, esegui questa operazione 2-5 volte scuotendo il dispositivo con l\'altoparlante rivolto verso il basso.\n\nATTENZIONE: Assicurati di aver disconnesso le cuffie.</string>
+
+    <string name="presets_dialog_title">Seleziona un preset</string>
+    <!-- Presets -->
+    <string name="preset_default">Default</string>
+    <string name="preset_version_1">Versione 1</string>
+    <string name="preset_version_2">Versione 2</string>
+    <string name="preset_version_3">Versione 3</string>
+    <string name="preset_triluminous">Triluminous</string>
+    <string name="preset_deep_black_white">Bianchi e neri profondi</string>
+    <string name="preset_deep_natural">Naturali intensi</string>
+    <string name="preset_cool_amoled">Amoled freddo</string>
+    <string name="preset_extreme_amoled">Amoled estremo</string>
+    <string name="preset_warm_amoled">Amoled caldo</string>
+    <string name="preset_hybrid_mamba">Hybrid Mamba</string>
+
+    <string name="hall_wakeup_title">Risveglio con flip cover</string>
+    <string name="hall_title">Abilita il risveglio con la flip cover</string>
+    <string name="hall_wakeup_summary">Risveglia il dispositivo con la flip cover magnetica</string>
+    <!-- menu -->
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Reset</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">Scegli il nuovo valore</string>
+    <string name="default_value">Valore di default</string>
+    <string name="edit_hint">Valori tra %1$d - %2$d</string>
+
+    <!-- FPS Info -->
+    <string name="fps_info_title">Overlay FPS</string>
+    <string name="fps_info_summary">Mostra un overlay con gli attuali fotogrammi per secondo</string>
+
+    <!-- Audio amplification -->
+    <string name="audio_amplify">Amplifica audio</string>
+    <string name="earpiece_gain">Guadagno auricolare</string>
+    <string name="headphone_gain">Guadagno cuffie</string>
+    <string name="mic_gain">Guadagno microfono</string>
+
+     <!-- Dirac -->
+    <string name="audio_title">Dirac</string>
+
     <!-- Dirac settings -->
     <string name="dirac_title">Ottimizzazione Mi Sound</string>
     <string name="dirac_summary">Ottimizza la qualità audio</string>
@@ -58,4 +146,12 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Incremento bassi</string>
+    <string name="dirac_preset_live">Live</string>
+    <string name="dirac_preset_balanced">Bilanciato</string>
+    <string name="dirac_preset_bass_reduction">Riduzione bassi</string>
+    <string name="dirac_preset_treble_reduction">Riduzione alti</string>
+    <string name="dirac_preset_soft_bass">Bassi morbidi</string>
+    <string name="dirac_preset_soft_treble">Alti morbidi</string>
+
 </resources>
