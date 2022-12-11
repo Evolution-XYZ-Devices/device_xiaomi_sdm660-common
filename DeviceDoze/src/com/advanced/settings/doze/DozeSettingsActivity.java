@@ -20,6 +20,8 @@ package com.advanced.settings.doze;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.widget.R;
 
 public class DozeSettingsActivity extends PreferenceActivity {
 
