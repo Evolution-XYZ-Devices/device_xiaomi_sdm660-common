@@ -34,6 +34,7 @@ import /vendor/etc/init/hw/init.qcom.power.rc
 import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.device.rc
 import /vendor/etc/init/hw/init.xiaomi_parts.rc
+import /vendor/etc/init/hw/init.xiaomi.rc
 
 on early-init
     mount tracefs tracefs /sys/kernel/tracing
