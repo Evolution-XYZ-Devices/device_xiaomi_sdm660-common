@@ -125,6 +125,7 @@ debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=0
 debug.sf.hw=1
 debug.hwui.skia_atrace_enabled=false
+debug.sf.auto_latch_unsignaled=0
 debug.sf.latch_unsignaled=1
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=20
