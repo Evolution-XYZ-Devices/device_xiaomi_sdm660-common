@@ -26,6 +26,7 @@
         android:targetSdkVersion="30"/>
 
     <application
+        android:directBootAware="true"
         android:label="@string/advanced_settings"
         android:supportsRtl="true"
         android:theme="@style/Theme.SubSettingsBase">
@@ -35,7 +36,7 @@
             android:directBootAware="true"
             android:enabled="true"
             android:exported="true">
-            <intent-filter>
+            <intent-filter android:priority="999">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
 
