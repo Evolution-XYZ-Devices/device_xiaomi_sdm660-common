@@ -47,8 +47,7 @@
         <activity
             android:name=".DeviceSettingsActivity"
             android:exported="true"
-            android:label="@string/advanced_settings"
-            android:launchMode="singleTask">
+            android:label="@string/advanced_settings">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
