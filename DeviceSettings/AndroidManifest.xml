@@ -53,10 +53,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
             </intent-filter>
-
-            <meta-data
-                android:name="com.android.settings.dismiss"
-                android:value="9,13,30" />
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_mi"/>
