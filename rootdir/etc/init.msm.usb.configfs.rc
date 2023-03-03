@@ -1407,7 +1407,7 @@ on property:sys.usb.config=audio_source && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idProduct 0x2d02
 
 on property:sys.usb.config=audio_source,adb && property:sys.usb.configfs=1
-    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "audiosource"
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "audiosource_adb"
     symlink /config/usb_gadget/g1/functions/audio_source.gs3 /config/usb_gadget/g1/configs/b.1/f1
     write /config/usb_gadget/g1/UDC ${sys.usb.controller}
     symlink /config/usb_gadget/g1/configs/b.1 /config/usb_gadget/g1/os_desc/b.1
@@ -1424,7 +1424,7 @@ on property:sys.usb.config=accessory,audio_source && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idProduct 0x2d04
 
 on property:sys.usb.config=accessory,audio_source,adb && property:sys.usb.configfs=1
-    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "accessory_audiosource"
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "accessory_audiosource_adb"
     symlink /config/usb_gadget/g1/functions/accessory.gs2 /config/usb_gadget/g1/configs/b.1/f1
     symlink /config/usb_gadget/g1/functions/audio_source.gs3 /config/usb_gadget/g1/configs/b.1/f2
     write /config/usb_gadget/g1/UDC ${sys.usb.controller}
@@ -1440,7 +1440,7 @@ on property:sys.usb.config=midi && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idProduct 0x4ee8
 
 on property:sys.usb.config=midi,adb && property:sys.usb.configfs=1
-    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "midi"
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "midi_adb"
     symlink /config/usb_gadget/g1/functions/midi.gs5 /config/usb_gadget/g1/configs/b.1/f1
     write /config/usb_gadget/g1/UDC ${sys.usb.controller}
     write /config/usb_gadget/g1/idVendor 0x18d1
