@@ -1,0 +1,2 @@
+get_prop(hal_usb_default, vendor_usb_prop)
+set_prop(hal_usb_default, vendor_usb_prop)
