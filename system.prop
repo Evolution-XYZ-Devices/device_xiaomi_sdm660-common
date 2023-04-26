@@ -9,3 +9,6 @@ DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
+
+# Feature flags
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
