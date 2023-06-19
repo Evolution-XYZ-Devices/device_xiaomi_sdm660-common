@@ -37,9 +37,16 @@
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+#include <init_lmk.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
+
+#define PARTIAL_STALL_MS_PROP "ro.lmk.psi_partial_stall_ms"
+#define COMPLETE_STALL_MS_PROP "ro.lmk.psi_complete_stall_ms"
+#define THRASHING_LIMIT_PROP "ro.lmk.thrashing_limit"
+#define THRASHING_LIMIT_DECAY_PROP "ro.lmk.thrashing_limit_decay"
+#define SWAP_UTIL_MAX_PROP "ro.lmk.swap_util_max"
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -102,10 +109,61 @@ void set_avoid_gfxaccel_config() {
     }
 }
 
+// lmk parameters for
+// 6GB variant
+static const lmk_info_t lmk_6144 = {
+    .psi_partial_stall_ms = "70",
+    .psi_complete_stall_ms = "700",
+    .thrashing_limit = "100",
+    .thrashing_limit_decay = "10",
+    .swap_util_max = "90",
+};
+
+// 4GB variant
+static const lmk_info_t lmk_4096 = {
+    .psi_partial_stall_ms = "130",
+    .psi_complete_stall_ms = "700",
+    .thrashing_limit = "55",
+    .thrashing_limit_decay = "35",
+    .swap_util_max = "90",
+};
+
+// 3GB variant
+static const lmk_info_t lmk_3072 = {
+    .psi_partial_stall_ms = "200",
+    .psi_complete_stall_ms = "700",
+    .thrashing_limit = "55",
+    .thrashing_limit_decay = "35",
+    .swap_util_max = "90",
+};
+
+void set_lmk() {
+    struct sysinfo sys;
+    const lmk_info_t *lmk_values;
+
+    sysinfo(&sys);
+
+    if (sys.totalram > 5072ull * 1024 * 1024)
+        lmk_values = &lmk_6144;
+    else if (sys.totalram > 3072ull * 1024 * 1024)
+        lmk_values = &lmk_4096;
+    else
+        lmk_values = &lmk_3072;
+
+    property_override(PARTIAL_STALL_MS_PROP, lmk_values->psi_partial_stall_ms);
+    property_override(COMPLETE_STALL_MS_PROP, lmk_values->psi_complete_stall_ms);
+    property_override(THRASHING_LIMIT_PROP, lmk_values->thrashing_limit);
+    property_override(THRASHING_LIMIT_DECAY_PROP, lmk_values->thrashing_limit_decay);
+    property_override(SWAP_UTIL_MAX_PROP, lmk_values->swap_util_max);
+}
+
 void vendor_load_properties()
 {
     check_device();
     set_avoid_gfxaccel_config();
+    set_lmk();
+    // Reinitialize lmkd
+    property_override("lmkd.reinit", "1");
 
     property_override("dalvik.vm.heapstartsize", heapstartsize);
     property_override("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
