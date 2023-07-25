@@ -35,6 +35,10 @@ import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.device.rc
 
 on early-init
+    mount tracefs tracefs /sys/kernel/tracing
+    chmod 0755 /sys/kernel/tracing
+    chown system system /sys/kernel/debug
+
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
