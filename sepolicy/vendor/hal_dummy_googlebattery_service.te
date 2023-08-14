@@ -1,0 +1,1 @@
+type hal_dummy_googlebattery_service, vendor_service, service_manager_type;

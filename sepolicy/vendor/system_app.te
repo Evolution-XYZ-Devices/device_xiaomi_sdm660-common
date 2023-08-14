@@ -1,0 +1,2 @@
+# we don't have google battery support, add dummy domain and let it return null by selinux denial
+dontaudit system_app hal_dummy_googlebattery_service:service_manager find;
