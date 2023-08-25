@@ -66,6 +66,7 @@
     <string name="presets_dialog_title">Select Preset</string>
     <!-- Presets -->
     <string name="preset_default">Default</string>
+    <string name="preset_burnin_lavender">Burn-in protection (lavender)</string>
     <string name="preset_version_1">Version 1</string>
     <string name="preset_version_2">Version 2</string>
     <string name="preset_version_3">Version 3</string>
