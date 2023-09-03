@@ -196,6 +196,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fast Charge HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.qcom
+
 # FM
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 PRODUCT_PACKAGES += \

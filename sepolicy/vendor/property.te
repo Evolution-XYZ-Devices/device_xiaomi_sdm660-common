@@ -3,3 +3,6 @@ vendor_public_prop(mlipay_prop)
 vendor_internal_prop(thermal_engine_prop)
 vendor_internal_prop(vendor_power_prop)
 vendor_internal_prop(dirac_prop);
+
+# For Fast Charge HAL
+vendor_internal_prop(vendor_fastcharge_prop)
