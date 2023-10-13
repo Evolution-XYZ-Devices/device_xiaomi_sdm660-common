@@ -199,18 +199,6 @@ service vendor.cdsprpcd /vendor/bin/cdsprpcd
 service vendor.pd_mapper /system/vendor/bin/pd-mapper
      class core
 
-service folio_daemon /system/bin/folio_daemon
-    class late_start
-    user system
-    group system uhid
-    disabled
-
-on property:persist.service.folio_daemon=0
-    stop folio_daemon
-
-on property:persist.service.folio_daemon=1
-    start folio_daemon
-
 service ppd /system/vendor/bin/mm-pp-dpps
     class late_start
     user system
