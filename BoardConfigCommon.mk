@@ -123,6 +123,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/bt_firmware:/bt_firmware \
     /mnt/vendor/persist:/persist
 
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Power
