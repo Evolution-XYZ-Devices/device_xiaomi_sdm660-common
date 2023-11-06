@@ -1,1 +1,2 @@
 allow priv_app zygote:unix_stream_socket { getopt };
+allow priv_app metadata_file:dir read;
