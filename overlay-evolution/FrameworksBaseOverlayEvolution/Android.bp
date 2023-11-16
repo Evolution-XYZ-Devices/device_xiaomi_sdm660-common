@@ -1,4 +1,4 @@
 runtime_resource_overlay {
     name: "FrameworksBaseSDM660OverlayEvolution",
-    product_specific: true
+    vendor: true
 }

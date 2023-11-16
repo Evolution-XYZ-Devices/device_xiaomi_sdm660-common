@@ -1,4 +1,4 @@
 runtime_resource_overlay {
     name: "SettingsOverlaySDM660Evolution",
-    product_specific: true
+    vendor: true
 }
