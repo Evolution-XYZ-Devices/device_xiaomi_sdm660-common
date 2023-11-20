@@ -362,9 +362,13 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service.xiaomi-libperfmgr
 
+ifeq ($(filter tulip whyred,$(TARGET_DEVICE)),)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint_636.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_636.json \
+    $(LOCAL_PATH)/configs/powerhint_636.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+else
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+endif
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
