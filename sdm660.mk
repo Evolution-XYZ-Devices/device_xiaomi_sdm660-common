@@ -345,12 +345,18 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-evolution
-    
 PRODUCT_PACKAGES += \
-    SettingsOverlayEvolution
+    CarrierConfigSDM660Overlay \
+    CellBroadcastReceiverSDM660Overlay \
+    FrameworksBaseSDM660Overlay \
+    SettingsProviderSDM660Overlay \
+    SystemUISDM660Overlay \
+    SettingsSDM660Overlay \
+    TelephonySDM660Overlay
+
+PRODUCT_PACKAGES += \
+    FrameworksBaseSDM660OverlayEvolution \
+    SettingsOverlaySDM660Evolution
 
 # Perf
 PRODUCT_PACKAGES += \
