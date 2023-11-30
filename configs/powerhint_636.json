@@ -5,7 +5,6 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1747200",
         "1536000",
         "1401600",
         "1113600"
@@ -18,7 +17,6 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1536000",
         "1401600",
         "1113600",
         "902400",
@@ -31,8 +29,6 @@
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "2150400",
-        "1958400",
         "1747200",
         "1401600"
       ],
@@ -44,7 +40,6 @@
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1958400",
         "1747200",
         "1401600",
         "1113600"
@@ -267,7 +262,7 @@
       "PowerHint": "Flipendo",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1747200"
+      "Value": "1401600"
     }
   ]
 }
