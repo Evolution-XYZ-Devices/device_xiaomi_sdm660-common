@@ -1,0 +1,32 @@
+android_app_import {
+    name: "RemovePackages",
+    overrides: [
+        "AppDirectedSMSService",
+        "arcore",
+        "BetterBugStub",
+        "ConnMO",
+        "DCMO",
+        "DevicePolicyPrebuilt",
+        "DMService",
+        "Drive",
+        "MaestroPrebuilt",
+        "Maps",
+        "PlayAutoInstallConfig",
+        "PrebuiltGmail",
+        "SCONE",
+        "ScribePrebuilt",
+        "Showcase",
+        "SoundAmplifierPrebuilt",
+        "talkback",
+        "Tycho",
+        "VZWAPNLib",
+        "VzwOmaTrigger",
+        "WfcActivation",
+    ],
+
+    apk: "null",
+    presigned: true,
+    dex_preopt: {
+    enabled: false,
+    },
+}
