@@ -8,4 +8,7 @@
     <!-- Whether to enable Lineage Fast Charge Preference -->
     <bool name="config_lineageFastChargeSupported">true</bool>
 
+    <!-- Whether device supports showing battery charge cycles -->
+    <bool name="config_showBatteryChargeCycles">false</bool>
+
 </resources>
