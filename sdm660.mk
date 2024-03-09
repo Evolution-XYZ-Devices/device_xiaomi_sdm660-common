@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
 
 # DeviceDoze
 PRODUCT_PACKAGES += \
-    DeviceDoze
+    XiaomiDoze
 
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify

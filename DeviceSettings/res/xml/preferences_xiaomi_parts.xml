@@ -113,8 +113,8 @@
             android:icon="@drawable/ic_doze">
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="com.advanced.settings.doze.DozeSettingsActivity"
-                android:targetPackage="com.advanced.settings.doze" />
+                android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"
+                android:targetPackage="org.lineageos.settings.doze" />
         </Preference>
         <Preference
             android:key="device_kcal"

@@ -70,7 +70,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private static final String PREF_DEVICE_DOZE = "device_doze";
     private static final String PREF_DEVICE_KCAL = "device_kcal";
 
-    private static final String DEVICE_DOZE_PACKAGE_NAME = "com.advanced.settings.doze";
+    private static final String DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
 
     private static final String DEVICE_JASON_PACKAGE_NAME = "org.lineageos.settings.devicex";
     private static final String PREF_DEVICE_JASON = "device_jason";
